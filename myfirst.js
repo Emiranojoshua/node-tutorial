@@ -24,13 +24,12 @@
 // }
 // console.log('Hello World!');
 
-let myArray = [1,2,3,4,5,6,7,8,9,0];
+const myArray = [1,2,3,4,5,6,7,8,9,0];
 
 function array_map(func, arr){
-  let myArray = arr;
   let emptyArray = [];
-  for (let index = 0; index < myArray.length; index++) {
-    emptyArray += [func(myArray[index])];    
+  for (let index = 0; index < arr.length; index++) {
+    emptyArray += [func(arr[index])];    
   }
 
   return emptyArray;
